@@ -1,83 +1,72 @@
-📩 SMS Spam Classifier
-A web-based SMS spam classifier built using Streamlit, scikit-learn, and Natural Language Processing (NLP) techniques. The app allows users to input a text message and predicts whether it is spam or not.
 
-🚀 Features
-Classifies messages as Spam or Not Spam
+# 📩 SMS Spam Classifier
 
-Clean and interactive Streamlit UI
+A web-based SMS spam classifier built using **Streamlit**, **scikit-learn**, and **Natural Language Processing (NLP)** techniques. The app allows users to input a text message and predicts whether it is spam or not.
 
-Preprocessing with:
+---
 
-Lowercasing
+## 🚀 Features
 
-Removing stopwords
+- Classifies messages as **Spam** or **Not Spam**
+- Clean and interactive **Streamlit UI**
+- Preprocessing with:
+  - Lowercasing  
+  - Removing stopwords  
+  - Stemming  
+- Model trained on **TF-IDF vectorized** text  
+- Built with a **pre-trained machine learning model** (Pickle)
 
-Stemming
+---
 
-Model trained on TF-IDF vectorized text
+## 🛠️ Technologies Used
 
-Built with a pre-trained machine learning model (pickle)
+- 🐍 Python  
+- 🧮 Streamlit  
+- 🤖 scikit-learn  
+- 🧠 NLTK  
+- 🧃 Pickle  
 
-🛠️ Technologies Used
-Python 🐍
+---
 
-Streamlit 📱
+## 📦 Installation
 
-scikit-learn 🤖
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/sms-spam-classifier.git
+   cd sms-spam-classifier
+   ```
 
-NLTK 🧠
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Pickle 🧃
+3. **Run the app**:
+   ```bash
+   streamlit run code.ipynb
+   ```
 
-📦 How to Run Locally
-Clone this repo:
+4. **(Optional)** If stopwords don’t work, download them using:
+   ```python
+   import nltk
+   nltk.download('stopwords')
+   ```
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/sms-spam-classifier.git
-cd sms-spam-classifier
-Install dependencies:
+---
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Download NLTK stopwords (if not already installed):
+## 📁 Project Structure
 
-python
-Copy
-Edit
-import nltk
-nltk.download('stopwords')
-Run the app:
-
-bash
-Copy
-Edit
-streamlit run code.ipynb
-📁 Project Structure
-bash
-Copy
-Edit
+```
 ├── model.pkl               # Trained ML model
 ├── vectorizer.pkl          # TF-IDF vectorizer
-├── code.ipynb              # Main Streamlit notebook
-├── requirements.txt        # Required Python libraries
+├── code.ipynb              # Streamlit notebook
+├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
-📸 Demo
+```
 
-🙌 Acknowledgements
-Streamlit
+---
 
-scikit-learn
+## 📬 Contact
 
-NLTK
-
-Spam dataset (SMS Spam Collection from UCI repository)
-
-📬 Contact
-Created with ❤️ by Tanishak Basnal
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/tanishak-bansal007)
-
-
+Created with ❤️ by Tanishak Bansal (https://github.com/tanishak0000007777)
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/tanishak-bansal007)
